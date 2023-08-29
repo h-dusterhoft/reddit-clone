@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import Article from './components/Article';
 // import logo from './logo.svg';
 // import './App.css';
 
@@ -26,7 +27,9 @@ function App() {
         <input type="text" className="input" value="webdev" />
       </header>
       <div className="articles">
-
+        {
+          (articles != null) ? articles.map((article, index) => <Article key={index} article={article.data} />) : ''
+        }
       </div>
     </div>
   );
