@@ -41,7 +41,8 @@ header:before {
 
 .articles article a {
   text-decoration: none;
-  display: inline-block;
+  display: flex;
+  align-items: center;
 }
 
 .articles article h3 {
@@ -62,4 +63,6 @@ h3 {
 
 img {
   padding: 10px;
+  width: 200px;
+  height: auto;
 }
